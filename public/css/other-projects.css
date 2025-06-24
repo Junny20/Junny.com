@@ -1,0 +1,69 @@
+body {
+    background-image: url("../images/grass_1_new.png");
+    background-size: 32px;
+    background-repeat: repeat;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    text-align: center;
+    font-family: 'Press Start 2P', monospace;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 80px 0px 130px 0px;
+}
+
+.header {
+    font-size: 0.75rem;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    width: 70vw;
+    margin-left: 14vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+img {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    height: 128px;
+    width: 128px;
+}
+
+#lychee {
+    height: 64px;
+    width: 64px;
+}
+
+#strawberry {
+    height: 64px;
+    width: 64px;
+}
+
+#ring {
+    height: 32px;
+    width: 32px;
+}
+
+#gold_book {
+    height: 192px;
+    width: 192px;
+}
+
+#potion {
+    height: 160px;
+    width: 160px;
+}
+
+#red_book {
+    height: 128px;
+    width: 128px;
+}
+
+.hidden {
+    visibility: hidden;
+}

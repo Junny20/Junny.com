@@ -1,0 +1,46 @@
+* {
+    font-family: 'Inter', monospace;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.flexbox {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.carousel-inner {
+    background-color: #000;
+    width: 30vw;
+}
+
+.fade {
+    opacity: 0.2;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.fade2 {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

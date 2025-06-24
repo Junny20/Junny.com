@@ -1,0 +1,9 @@
+footer {
+    text-align: left;
+    bottom: 0;
+    margin-bottom: 7px;
+    margin-left: 3px;
+    color: white;
+    font-size: 1rem;
+    font-family: monospace;
+}

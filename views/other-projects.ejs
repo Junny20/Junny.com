@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/other-projects.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <%- include("header.ejs") %>
+    </div>
+    
+    <audio id="bg-music2" autoplay loop>
+      <source src="/audio/TownTheme.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <h1>Check out my projects!</h1>
+    <div class="grid">
+      <div>
+        <img id="lychee" src="/images/lychee_new.png" />
+        <p id="p1" class="hidden">PyTorch and TensorFlow application</p>
+      </div>
+      <div>
+        <img id="potion" src="/images/pink.png" />
+        <p id="p2" class="hidden">Steam Game</p>
+      </div>
+      <div>
+        <img id="red_book" src="/images/thick_new.png" />
+        <p id="p3" class="hidden">...</p>
+      </div>
+      <div>
+        <img id="ring" src="/images/ring_gold_cyan.png" />
+        <p id="p4" class="hidden">More Stuff!</p>
+      </div>
+      <div>
+        <img id="gold_book" src="/images/gold.png" />
+        <p id="p5">Go back to main website</p>
+      </div>
+      <div>
+        <img id="strawberry" src="/images/strawberry_new.png" />
+        <p id="p6" class="hidden">Secret</p>
+      </div>
+    </div>
+    <div style="margin-left: 1vw; margin-bottom: 1vw">
+      <%- include("footer.ejs") %>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/other-projects.js"></script>
+  </body>
+</html>

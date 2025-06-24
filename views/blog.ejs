@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <%- include("header.ejs") %>
+    <audio id="bg-music" autoplay loop>
+      <source src="/audio/gleam.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    
+    <div class="flexbox">
+      <% posts.forEach(element => { %>
+        <div class="flexbox">
+          <div class="flexbox2">
+            <form method="post" action="/content">
+              <button type="submit" class="blog"><%= element.title %></button>
+              <input type="hidden" name="title" value="<%= element.title %>" />
+            </form>
+            <p><%= element.date %></p>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+
+    <div class="flexbox3">
+      <%- include("footer.ejs") %>
+      <button id="return">Post your own blog!</button>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/blog.js"></script>
+  </body>
+</html>

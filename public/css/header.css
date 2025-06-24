@@ -1,0 +1,56 @@
+body {
+    color: white;
+}
+
+.header {
+    width: 50vw;
+    padding-top: 10px;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#logo {
+    cursor: pointer;
+    grid-area: 1 / 1 / 2 / 2;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+#about {
+    cursor: pointer;
+    grid-area: 1 / 2 / 1 / 3;
+}
+
+#about:hover {
+    font-weight: 900;
+}
+
+#contact {
+    cursor: pointer;
+    grid-area: 1 / 3 / 1 / 4;
+}
+
+#contact:hover {
+    font-weight: 900;
+}
+
+#github {
+    cursor: pointer;
+    grid-area: 1 / 4 / 1 / 5;
+}
+
+#github:hover {
+    font-weight: 900;
+}
+
+#blogpage {
+    cursor: pointer;
+    grid-area: 1 / 5 / 1 / 6;
+}
+
+#blogpage:hover {
+    font-weight: 900;
+}
