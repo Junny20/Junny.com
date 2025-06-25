@@ -35,7 +35,6 @@ app.get("/", (req, res) => {
 
 app.get("/blog", async (req, res) => {
   const result = await db.query("SELECT * FROM posts");
-  console.log(result.rows);
   var randomAdjective =
     adjectives[Math.floor(Math.random() * adjectives.length)];
   res.render("blog.ejs", {
@@ -47,20 +46,19 @@ app.get("/blog", async (req, res) => {
   });
 });
 
-app.get("/post", async (req, res) => {
+app.get("/suggest", async (req, res) => {
   res.render("form.ejs");
 });
 
-app.post("/post", async (req, res) => {
+app.post("/suggest", async (req, res) => {
   const day = new Date().getDate();
   const month = new Date().getMonth() + 1;
   const year = new Date().getFullYear();
   const date = `${day}/${month}/${year}`;
   await db.query(
-    "INSERT INTO posts (title, content, date) VALUES ($1, $2, $3)",
+    "INSERT INTO suggestions (title, content, date) VALUES ($1, $2, $3)",
     [req.body.title, req.body.content, date]
   );
-  res.redirect("/blog");
 });
 
 app.post("/content", async (req, res) => {
@@ -106,6 +104,10 @@ app.get("/contact", (req, res) => {
     contact: "Home",
   });
 });
+
+app.post("/contact", (req, res) => {
+  console.log(req.body);
+})
 
 app.listen(port, () => {
   console.log(`Server running on port: ${port}`);

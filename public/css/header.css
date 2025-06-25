@@ -1,7 +1,3 @@
-body {
-    color: white;
-}
-
 .header {
     width: 50vw;
     padding-top: 10px;
@@ -10,47 +6,41 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 #logo {
+    padding-left: 5vw;
     cursor: pointer;
     grid-area: 1 / 1 / 2 / 2;
     image-rendering: pixelated;
-    image-rendering: crisp-edges;
 }
 
 #about {
+    transition: color 1s ease;
     cursor: pointer;
     grid-area: 1 / 2 / 1 / 3;
 }
 
-#about:hover {
-    font-weight: 900;
-}
-
 #contact {
+    transition: color 1s ease;
     cursor: pointer;
     grid-area: 1 / 3 / 1 / 4;
 }
 
-#contact:hover {
-    font-weight: 900;
-}
-
 #github {
+    transition: color 1s ease;
     cursor: pointer;
     grid-area: 1 / 4 / 1 / 5;
 }
 
-#github:hover {
-    font-weight: 900;
-}
-
 #blogpage {
+    transition: color 1s ease;
     cursor: pointer;
     grid-area: 1 / 5 / 1 / 6;
 }
 
-#blogpage:hover {
-    font-weight: 900;
+#blogpage:hover, #github:hover, #contact:hover, #about:hover, #logo:hover {
+    color: fuchsia;
+    transform: scale(1.05);
 }

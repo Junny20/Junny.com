@@ -12,30 +12,25 @@ p {
     font-size: 1rem;
 }
 
-h1 {
-    padding: 80px 20px 120px 20px;
-    font-size: 4rem;
+#intro {
+    text-align: left;
+    margin-left: 6vw;
+    margin-top: 100px;
+    font-size: 2.5rem;
 }
 
 .flexbox {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    margin-top: 3vw;
+    margin-left: 6vw;
+    max-width: 50vw;
+    min-height: 59vh;
 }
 
 .flexbox2 {
-    display: inline-flex;
-    justify-content: space-between;
-}
-
-.flexbox3 {
-    padding-top: 50px;
     display: flex;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 90vw;
     justify-content: space-between;
-    align-items: center;
 }
 
 form {
@@ -51,30 +46,35 @@ form {
 }
 
 .blog:hover {
-    font-weight: 900;
+    transform: scale(1.1);
+    animation: changeColor 1s;
 }
 
+@keyframes changeColor {
+    to {
+        color: fuchsia
+    }
+}
 
 #return { 
+    position: fixed;
+    top: 40px;
+    right: 20px;
     border: none;
     font-size: 1rem;
     color: white;
-    background-color: fuchsia;
-    height: 25px;
+    background-color: black;
+    height: 20px;
     width: 200px;
-    border-radius: 6%;
-    box-shadow: darkviolet 0px 5px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: color 1s ease;
 }
 
 #return:hover {
-    transform: translateY(-3px);
-    box-shadow: darkviolet 0px 8px;
-}
-
-#return:active {
-    transform: translateY(2px);
-    box-shadow: darkviolet 0px 3px;
+    transform: scale(1.05);
+    color: fuchsia;
+    
 }
 
 img {

@@ -1,11 +1,23 @@
 * {
     font-family: 'Inter', monospace;
     text-align: center;
-    color: white;
 }
 
 body {
     background-color: black;
+    color: white;
+}
+
+
+h1 {
+    font-size: 3rem;
+    margin-top: 120px;
+}
+
+#description {
+    font-size: 1.5rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .flexbox {
@@ -18,48 +30,62 @@ body {
 input, textarea {
     border: none;
     border-radius: 5px;
-    margin: 8px;
-    height: 30px;
+    margin: 15px;
+    height: 40px;
     padding: 5px;
-    width: 60vw;
+    width: 65vw;
     text-align: left;
     color: black;
-    box-shadow: 0px 4px 10px  rgb(150, 150, 150);
 }
 
-button {
+input:focus, textarea:focus {
+  outline: none;
+}
+
+#message {
+    height: 250px;
+    width: 65vw;
+    resize: none;
+    vertical-align: top;
+}
+
+#submit {
     margin: 10px;
-    width: 60.7vw;
+    width: 65.7vw;
     height: 30px;
     border: none;
     background-color: fuchsia;
     border-radius: 5px;
     box-shadow: 0px 5px darkmagenta;
-    
+    color: white;
+    margin-bottom: 75px;
 }
 
-button:hover {
-    font-weight: 900;
+#submit:hover {
     transform: translateY(-2px);
     box-shadow: 0px 7px darkmagenta;
 }
 
-button:active {
+#submit:active {
     transform: translateY(3px);
     box-shadow: 0px 2px darkmagenta;
-}
-
-#message {
-    height: 300px;
-    min-width: 60vw;
-    resize: none;
-    vertical-align: top;
 }
 
 .flexbox2 {
     padding-top: 50px;
     display: flex; 
+    flex-wrap: wrap;
     margin-top: 10px;
     align-items: center;
     justify-content: space-evenly;
+}
+
+svg {
+    fill: white;
+    transition: fill 1s ease, transform 1s ease;
+}
+
+svg:hover {
+    fill: fuchsia;
+    transform: scale(1.2);
 }

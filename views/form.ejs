@@ -14,16 +14,18 @@
 </head>
 <body>
     <div>
-        <form method="post" action="/post">
+        <form method="post" action="/suggest">
             <div class="flexbox">
-                <h1>New Post</h1>
+                <h1>Suggestions</h1>
                 <input id="title" type="text" name="title" placeholder="Title..." required/>
-                <textarea id="content" type="text" name="content" placeholder="Content..." required></textarea>
-                <%# <input id="date" type="text" name="date" placeholder="DD/MM/YYYY"/> %>
+                <textarea id="message" type="text" name="content" placeholder="Message..." required></textarea>
                 <button id="submit" type="submit">Submit</button>
             </div>
         </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/form.js"></script>
 </body>
 </html>
 
