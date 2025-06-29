@@ -28,17 +28,6 @@ body {
     width: 30vw;
 }
 
-.fade {
-    opacity: 0.2;
-    animation: fadeIn 2s ease-in forwards;
-}
-
-.fade2 {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-    animation-delay: 1s;
-}
-
 @keyframes fadeIn {
     to {
         opacity: 1;

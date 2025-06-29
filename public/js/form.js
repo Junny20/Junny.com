@@ -3,9 +3,11 @@ $("#submit").on("click", ()=>{
     const message = $("#message").val();
     if (title.length !== 0 && message.length !== 0) {
         Swal.fire({
-            title: "Feedback sent!",
+            theme: "dark",
+            backdrop: false,
+            titleText: "Thank you!",
             icon: "success",
-            confirmbuttontext: "Return to homepage",
+            confirmButtonText: "Return to homepage",
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.href = '/';

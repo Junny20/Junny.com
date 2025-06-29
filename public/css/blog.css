@@ -8,8 +8,14 @@ body {
     color: white;
 }
 
-p {
+#date {
     font-size: 1rem;
+}
+
+@media (max-width: 1000px) {
+    #date {
+        visibility: hidden;
+    }
 }
 
 #intro {
@@ -24,8 +30,8 @@ p {
     flex-direction: column;
     margin-top: 3vw;
     margin-left: 6vw;
-    max-width: 50vw;
-    min-height: 59vh;
+    max-width: 70vw;
+    min-height: 58vh;
 }
 
 .flexbox2 {
@@ -33,16 +39,23 @@ p {
     justify-content: space-between;
 }
 
-form {
-    padding: 16px 0 16px 0;
-    height: 20px;
+
+.flexbox3 {
+    display: flex;
+    max-width: 300px;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 37px;
+    right: 10px;
 }
 
 .blog {
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
     border: none;
-    background-color: black;
+    background-color: transparent;
     color: white;
+    padding: 16px 0 16px 0;
+    height: 20px;
 }
 
 .blog:hover {
@@ -56,32 +69,24 @@ form {
     }
 }
 
-#return { 
-    position: fixed;
-    top: 40px;
-    right: 20px;
+#return, #subscribe { 
     border: none;
     font-size: 1rem;
     color: white;
-    background-color: black;
-    height: 20px;
-    width: 200px;
-    border-radius: 5px;
+    background-color: transparent;
     cursor: pointer;
     transition: color 1s ease;
 }
 
-#return:hover {
+#return:hover, #subscribe:hover {
     transform: scale(1.05);
     color: fuchsia;
-    
 }
 
-img {
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
-    width: 128px;
-    height: 128px;
+.divide {
+  border: none;
+  height: 1px;
+  background-color: white;
+  width: 100%;
 }
-
 

@@ -1,0 +1,52 @@
+body {
+    font-family: "Inter", monospace;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 4rem);
+    margin: 0;
+}
+
+p {
+    font-size: clamp(1.25rem, 4vw, 2rem);
+}
+
+
+.flexbox {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+    height: 50vh;
+}
+
+
+input,
+button {
+  height: 48px;
+  width: min(90vw, 400px);
+  padding: 0 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: 2px solid #888;
+}
+
+button {
+  background-color: #1e90ff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1c86ee;
+}

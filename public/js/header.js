@@ -22,3 +22,9 @@ $("#blogpage").click(() => {
     window.location.pathname = "/";
   }
 });
+
+$(document).ready(() => {
+  $(".menu").click(() => {
+    $(".header").toggleClass("expanded");
+  });
+});

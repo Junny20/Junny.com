@@ -8,17 +8,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet"/>
-    
+    <script src="https://esm.sh/css-doodle/css-doodle.min.js?raw"></script>
 </head>
 <body>
-    <%- include("header.ejs") %>
-    <div class="flexbox">
-        <h1 class="fade">Hi.</h1>
-        <div>
-            <p id="me">I'm Junnian, and I <strong>code.</strong></p>
-        </div>
-        <div class="container">
-            <button id="other-projects">Check out my projects</button>
+    <css-doodle class="background-doodle">
+        @grid: 14;
+
+        :container {
+            gap: 1px;
+            transform: rotate(45deg);
+        }
+
+        transition: @r(1.5s) ease-in;
+
+        @random(0.3) {
+            background: radial-gradient(
+            circle,
+            @p(#FF5B00, #FF000D, #FEE12B),
+            transparent @p(0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%)
+            );
+            background-position: @r(50%);
+            background-size: 40% 100%;
+            background-repeat: no-repeat;
+        }
+
+        @random(.3) {
+            filter: drop-shadow(0 0 10px #fff);
+        }
+    </css-doodle>
+    <div class="content">
+        <%- include("header.ejs") %>
+        <div class="flexbox">
+            <h1 class="fade">Hi.</h1>
+            <div>
+                <p id="me">I'm Junnian, and I <strong>code.</strong></p>
+            </div>
+            <div class="container">
+                <button id="other-projects">Check out my projects</button>
+            </div>
         </div>
     </div>
     
@@ -26,7 +53,3 @@
     <script src="/js/script.js"></script>
 </body>
 </html>
-
-<%# #8F8255 %>
-<%# #D5B741 %>
-<%# #C4C29C %>

@@ -2,6 +2,10 @@ $("#return").on("click", () => {
   window.location.href = "/suggest";
 });
 
+$("#subscribe").on("click", () => {
+  window.location.href = "/subscribe";
+});
+
 $(".blog").on("click", () => {
   window.location.href = "/content";
 })

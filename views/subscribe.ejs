@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/subscribe.css" rel="stylesheet"/>
+</head>
+<body>
+    <div>
+        <form method="post" action="/subscribe">
+            <div class="flexbox">
+                <h1>Subscribe</h1>
+                <p>Stay notified of updates to this website.</p>
+                <input id="email" type="text" name="email" placeholder="Email address..." required/>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/subscribe.js"></script>
+</body>
+</html>

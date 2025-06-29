@@ -8,20 +8,37 @@ body {
     text-align: center;
 }
 
+.background-doodle {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none; 
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 p {
   font-size: 1rem;
+  margin-bottom: 50px
 }
 
 .flexbox {
     height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 

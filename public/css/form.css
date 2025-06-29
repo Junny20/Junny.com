@@ -9,7 +9,7 @@ body {
 
 h1 {
     color: white;
-    font-size: 2rem;
+    font-size: clamp(2rem, 6vw, 3rem);
     text-align: center;
 }
 
@@ -22,7 +22,7 @@ input {
 }
 
 input:focus, textarea:focus {
-    outline: none;
+    outline: 2px solid #888;
 }
 
 #message {
@@ -36,6 +36,8 @@ input:focus, textarea:focus {
 }
 
 #submit {
+    background-color: #1e90ff;
+    color: white;
     height: 40px;
     width: 60vw;
     border: none;
@@ -48,5 +50,6 @@ input:focus, textarea:focus {
     align-items: center;
     justify-content: space-evenly;
     height: 80vh;
+    margin-top: 10vh;
 }
 

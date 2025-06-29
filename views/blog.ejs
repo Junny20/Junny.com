@@ -31,13 +31,17 @@
               <button type="submit" class="blog"><%= element.title %></button>
               <input type="hidden" name="title" value="<%= element.title %>"/>
             </form>
-            <p><%= element.date %></p>
+            <p id="date"><%= element.date %></p>
           </div>
+          <hr class="divide"/>
         </div>
       <% }); %>
     </div>
     <%- include("footer.ejs") %>
-    <button id="return">Send Feedback!</button>
+    <div class="flexbox3">
+      <button id="subscribe">Subscribe!</button>
+      <button id="return">Send Feedback!</button>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/js/blog.js"></script>
   </body>

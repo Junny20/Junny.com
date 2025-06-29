@@ -18,7 +18,10 @@
         }
 
         h1 {
-            font-size: 4rem;
+            max-width: 90vw;
+            font-size: clamp(2rem, 4vw, 3rem);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         
         .flexbox {
@@ -31,10 +34,6 @@
             text-align: left;
         }
 
-        .header {
-            text-align: center;
-        }
-
         textarea {
             border: none;
             resize: none;
@@ -42,15 +41,11 @@
             width: 88vw;
             min-height: 50vh;
         }
-
-        
-        
     </style>
 </head>
 <body>
-    <div class="header">
-        <%- include("header.ejs") %>
-    </div>
+    <%- include("header.ejs") %>
+
     <div class="flexbox">
         <h1><%= title %></h1>
         <textarea readonly><%= content %></textarea>
