@@ -17,11 +17,6 @@ body {
   pointer-events: none; 
 }
 
-.content {
-  position: relative;
-  z-index: 1;
-}
-
 h1 {
     font-size: 4rem;
     font-weight: 900;
